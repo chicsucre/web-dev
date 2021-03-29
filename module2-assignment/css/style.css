@@ -1,0 +1,86 @@
+
+/********** Base styles **********/
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 150%;
+}
+
+#box {
+  border: 1px solid black;
+  background-color:khaki;
+  width: 95%;
+  height: 150px;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+  color:black;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  padding: 12px;
+
+}
+
+h2 {
+  border: 1px solid black;
+  background-color:green;
+  text-align: center;
+  font-size: 125%;
+  float: right;
+
+  /*position:absolute;
+  right:0px;
+  top:0px;*/
+  padding: 2px;
+  margin: 0px;
+}
+
+.col-lg-4, .col-lg-4,.col-sm-12{
+  padding: 10px;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  
+}
+
+/********** desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+  #col3 {
+    float: left;
+    width: 100%;
+  }
+}
+
+/********** mobile devices only **********/
+@media (max-width: 767px){
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+
+}
